@@ -536,7 +536,7 @@
 	"variable": [
 		{
 			"key": "base_url",
-			"value": "",
+			"value": "https://reqres.in/api",
 			"type": "default"
 		},
 		{
@@ -546,12 +546,12 @@
 		},
 		{
 			"key": "Key",
-			"value": "",
+			"value": "reqres-free-v1",
 			"type": "default"
 		},
 		{
 			"key": "api_key",
-			"value": "",
+			"value": "reqres-free-v1",
 			"type": "default"
 		},
 		{
