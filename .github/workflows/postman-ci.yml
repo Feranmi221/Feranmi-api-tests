@@ -1,0 +1,22 @@
+name: Run Postman Collection
+
+on:
+  push:
+    branches: [ dev ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  run-postman-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Postman CLI
+        run: |
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+
+      - name: Run Postman collection from repo file
+        run: |
+          postman collection run "Feranmi-api-tests.postman_collection.json"
